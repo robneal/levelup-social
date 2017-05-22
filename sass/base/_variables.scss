@@ -3,22 +3,24 @@
 // ---------------------------------------------------------------------------//
 
 @import "https://fonts.googleapis.com/css?family=Roboto:100,300i,400,400i,700";
-$mainFont : 'Roboto', sans-serif;
+$main-font : 'Roboto', sans-serif;
 
 
 // Main Colors ---------------- / 
-$beige         : #E3C691;
-$darkGreenGold : #8D8862;
-$lightGreen    : #C0DC99;
-$green         : #507356;
-$lightBlue     : #97D5D9;
-$desatBlue     : #464B65;
+$levelup-blue  		: #579BCE;
+$levelup-brown		: #3D3B3B;
+$levelup-gray		: #E2E2E2;
 
 // Secondary Colors ---------- / 
-$purple        : #3E2B3D;
-$darkPurple    : #3A3248;
-$pink          : #CC8E94;
-$skin          : #B08B7B;
+$light-gray        	: #EFEFEF;
+$warning-red		: #AE0000; 
+$ltBlack			: #3a3a3a;
+
+
 
 // Breakpoints --------------- / 
-//$mobileSmall   : 320;
+$xsm-breakpoint   			: 320px;
+$sm-breakpoint				: 480px; 
+$md-breakpoint				: 760px; 
+$lg-breakpoint				: 960px; 
+$sm-laptop-breakpoint		: 1024px; 

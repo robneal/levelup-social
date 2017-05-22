@@ -8,21 +8,15 @@
     clear: both;
   }
 }
+// How to Use: 
+// @mixin clearfix; 
 
-@mixin atSmall{
-	@media (min-width: 400px){
-		@content; 
-	}
+@mixin at-media-breakpoint($width) {
+  @media (min-width: $width){
+    @content;
+  }
 }
-
-@mixin atMedium{
-	@media (min-width: 600px){
-		@content; 
-	}
-}
-
-@mixin atLarge{
-	@media (min-width: 960px){
-		@content;
-	}
-}
+// How to Use: 
+// @include at-media-breakpoint(320px) {
+//   background: red;
+// }

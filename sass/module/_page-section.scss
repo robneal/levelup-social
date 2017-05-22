@@ -1,0 +1,14 @@
+.page-section{
+	padding: 90px 0px;
+	background-color: white;
+
+	&--brown{
+		background-color: $levelup-brown; 
+		color:white; 
+	}
+
+	&--gray{
+		background-color: $levelup-gray; 
+		color:black; 
+	}
+}

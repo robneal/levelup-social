@@ -6,3 +6,13 @@
 @import "_tagPreset";
 @import "_variables";
 @import "_mixins";
+
+body {
+ 	background-color:white;
+  	font-family: $main-font;
+  	font-size: 16px;
+  	line-height: 1.6;
+	color: black;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+}

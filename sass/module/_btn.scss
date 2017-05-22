@@ -1,0 +1,32 @@
+.btn{
+	background-color:$levelup-blue;
+	color:$levelup-brown;
+	
+	display: block;
+	margin:0 auto;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	padding:.75rem 1.2rem;
+	border-radius: 30px; 
+    font-weight: 700;
+    border: 2px solid transparent;
+
+    vertical-align: middle;
+    background-image: none;
+    cursor: pointer;
+    white-space: nowrap;
+    -webkit-transition: color 100ms ease-in, border-color 100ms ease-in;
+    transition: color 100ms ease-in, border-color 100ms ease-in;
+    touch-action: manipulation;
+    -ms-touch-action: manipulation;
+    
+
+	&--white{
+		background-color: white;
+		color: $levelup-blue;
+		border: 2px solid $levelup-blue;
+
+	}
+
+}
