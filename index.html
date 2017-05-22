@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Project Template</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name ="viewport" content="width = device-width, initial-scale = 1.0">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <link rel="shortcut icon" href="favicon.ico"/>  <!--Appearently you don't need this link but i kept it anyway-->
+
+    <!-- Styles --> 
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+
+	<header>
+		
+		<input type="checkbox" id="hbMenu"/>
+		<label class="hbMenuLabel" for="hbMenu"></label>
+
+		<nav class="wrapper">
+			
+			<div class="logo">
+				<a href="index.html">
+					<img src="img/icons" alt=""/>
+					<h1>Level up <span>Social Media</span></h1>
+				</a>
+			</div>
+
+			<ul class="mainMenu">
+				<a href="case-studies.html">Case Studies</a>
+				<a href="#work-with-us"><button>Work With Us</button></a>
+			</ul>
+		</nav>
+
+	</header>
+
+
+	<section id="visualLead" class="visualLead page-section">
+
+		<div class="wrapper">
+
+			<p class="visualLead__description">
+				We are a digital agency build for the now. We partner
+				with clients to drive bussiness outcomes with best-in-class
+				<a>modern content production</a>, <a>social media management</a> 
+				<a>, web development</a> and everything in between.  
+			</p>
+
+			<a href="" class="btn btn--blue">Work With Us</a>
+			<a href="#" class="visualLead__down-arrow">▼</a>
+
+		</div>
+	</section>
+
+
+	<section id="our-services" class=" our-services page-section">
+		<div class="wrapper">
+			
+			<h2 class="section-title">Our Services</h2>
+
+			<div class="our-services-item">
+				<h3 class="our-services-item__title">Social Media Management</h3>
+				<img src=""/>
+				<img src=""/>
+				<img src=""/>
+
+				<hr class="seperator-short seperator-short--thick" />
+
+				<p class="our-services-item__description">
+					We can create custom content for your social media page(s) to
+					help you build rich customer experiences online.
+				</p>
+				
+				<p class="our-services-item__description">
+					Our team can be in charge of distributing professional content on a 
+					consistent rate that fits your needs.
+				</p>
+
+				<p class="our-services-item__description">
+					We will engage with your customers to create long lasting 
+					relationships that grow your brand and business. 
+				</p>
+
+				<a href="#" class="btn btn--white">See case studies</a>
+			</div>
+
+		</div>	
+	</section>
+
+	<section id="testimonials" class=" testimonials page-section page-section--brown">
+		<div class="wrapper">
+			
+			<h2 class="section-title">
+				We <img class="section-title__image--heart" src="" />
+				our clients
+			</h2>
+
+			<h3 class="section-subtitle">Some Brand's we've worked with</h3> 
+			
+			<hr class="seperator-short seperator-short--thin seperator-short--white" />
+			
+			<div class="testimonials__brand-logos">
+				<img src="" />
+				<img src="" />
+				<img src="" />
+				<img src="" />
+			</div>
+
+			<a href="#" class="btn btn--blue">Client case studies</a>
+
+		</div>
+	</section>
+
+	<section id="work-with-us">
+
+		<div class="wrapper">
+
+			<h2 class="section-title">Work with us</h2>
+
+			<form class="contact-form" action="index.html" method="post">
+
+				<div class="contact-form__inquery">
+
+					<p class="contact-form__title">
+						What would you like to talk about?
+						<span class="contact-form__reqiured-field">*</span>
+					</p>
+
+					<div class="contact-form__radio-group">
+						<input type="radio" name="inquery" value="business">
+						<label for="business">Business Inquery</label>
+					</div>
+					
+					<div class="contact-form__radio-group">
+						<input type="radio" name="inquery" value="employment">
+						<label for="employment">Employment Inquery</label> 
+					</div>
+
+					<div class="contact-form__radio-group">
+						<input type="radio" name="inquery" value="general">
+						<label for="general">General Inquery</label>
+					</div>
+				</div>
+
+				
+				<div class="contact-form__sender-info">
+					<div class="contact-form__text-input-group">
+						<label for="name">
+							Name 
+							<span class="contact-form__reqiured-field">*</span>
+						</label>
+						<input type="text" id="sender_name" name="sender_name">
+					</div>
+
+					<div class="contact-form__text-input-group">
+						<label for="email">
+							Email 
+							<span class="contact-form__reqiured-field">*</span>
+						</label>
+						<input type="email" id="sender_email" name="sender_email">
+					</div>
+					
+					<div class="contact-form__text-input-group">
+						<label for="email">
+							Phone Number 
+						</label>
+						<input type='tel' pattern='[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{4}' 
+						title='Phone Number (Format: +9(999)999-9999)' id="phone" 
+						name="sender_phone">
+					</div>
+
+				</div>
+
+				<div class="contact-form__sender-message">
+					<div class="contact-form__text-input-group">
+						<label for="message">What are you looking to achieve
+							<span class="contact-form__reqiured-field">*</span>
+						</label>
+						<textarea id="sender_message" name="sender_message"></textarea>
+				</div>
+
+				<button class="btn btn-white" type="submit">Submit</button>
+
+			</form>
+			
+		</div>
+		
+	</section>
+
+	<footer class="page-section">
+		<div class="wrapper">
+			<p> Levelup Social Media &copy; 2017</p>
+		</div>
+	</footer>
+	</footer>
+
+	
+	
+	<!-- jQuery Google CDN  
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+
+	<!-- My Javascript
+	<script type="text/javascript" src=" "></script>-->
+</body>
+</html>

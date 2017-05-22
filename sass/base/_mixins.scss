@@ -1,0 +1,28 @@
+// _mixins
+// ---------------------------------------------------------------------------//
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin atSmall{
+	@media (min-width: 400px){
+		@content; 
+	}
+}
+
+@mixin atMedium{
+	@media (min-width: 600px){
+		@content; 
+	}
+}
+
+@mixin atLarge{
+	@media (min-width: 960px){
+		@content;
+	}
+}
