@@ -435,4 +435,8 @@ a {
 button:focus, button:hover {
   outline: none; }
 
+.site-header {
+  position: fixed;
+  z-index: 10; }
+
 /*# sourceMappingURL=main.css.map */
