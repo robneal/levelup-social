@@ -16,7 +16,7 @@
 			border: solid 3px $levelup-brown; 
 		    margin: 30px auto;
 		    padding: 1.5rem;
-		    border-radius: 10px;
+		    border-radius: 3px;
 		    position: relative;
 
 		    @include at-media-breakpoint($lg-breakpoint) {

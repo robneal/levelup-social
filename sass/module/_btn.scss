@@ -20,13 +20,19 @@
     transition: color 100ms ease-in, border-color 100ms ease-in;
     touch-action: manipulation;
     -ms-touch-action: manipulation;
+    max-width:450px; 
     
 
 	&--white{
 		background-color: white;
 		color: $levelup-blue;
 		border: 2px solid $levelup-blue;
+	}
 
+	&--black{
+		background-color: white;
+		color:black;
+		border: 2px solid black;
 	}
 
 }

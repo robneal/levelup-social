@@ -161,7 +161,7 @@
 
 			<h3 class="section-subtitle">Some Brand's we've worked with</h3> 
 			
-			<hr class="seperator-short seperator-short--thin seperator-short--white" />
+			<hr class="seperator__short seperator__short--thin seperator__short--white" />
 			
 			<div class="testimonials__brand-logos">
 				<img src="img" />
@@ -191,59 +191,71 @@
 					</p>
 
 					<div class="contact-form__radio-group">
-						<input type="radio" name="inquery" value="business">
-						<label for="business">Business Inquery</label>
-					</div>
-					
-					<div class="contact-form__radio-group">
-						<input type="radio" name="inquery" value="employment">
-						<label for="employment">Employment Inquery</label> 
-					</div>
+						<div class="contact-form__radio-group__item">
+							<input type="radio" name="inquery" value="business" id="business-inquery">
+							<label for="business-inquery">Business Inquery</label>
+						</div>
+						
+						<div class="contact-form__radio-group__item">
+							<input type="radio" name="inquery" value="employment" id="employment-inquery">
+							<label for="employment-inquery">Employment Inquery</label> 
+						</div>
 
-					<div class="contact-form__radio-group">
-						<input type="radio" name="inquery" value="general">
-						<label for="general">General Inquery</label>
+						<div class="contact-form__radio-group__item">
+							<input type="radio" name="inquery" value="general" id="general-inquery">
+							<label for="general-inquery">General Inquery</label>
+						</div>
 					</div>
 				</div>
 
+				<div class="contact-form__sender-group">
 				
-				<div class="contact-form__sender-info">
-					<div class="contact-form__text-input-group">
-						<label for="name">
-							Name 
-							<span class="contact-form__reqiured-field">*</span>
-						</label>
-						<input type="text" id="sender_name" name="sender_name">
+					<div class="contact-form__sender-info">
+						
+						<div class="contact-form__text-input">
+							<label for="name">
+								Name 
+								<span class="contact-form__reqiured-field">*</span>
+							</label>
+							<input type="text" id="sender_name" name="sender_name">
+						</div>
+
+						<div class="contact-form__text-input">
+							<label for="email">
+								Email 
+								<span class="contact-form__reqiured-field">*</span>
+							</label>
+							<input type="email" id="sender_email" name="sender_email">
+						</div>
+						
+						<div class="contact-form__text-input">
+							<label for="email">
+								Phone Number 
+							</label>
+							<input type='tel' pattern='[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{4}' 
+							title='Phone Number (Format: +9(999)999-9999)' id="phone" 
+							name="sender_phone">
+						</div>
+
 					</div>
 
-					<div class="contact-form__text-input-group">
-						<label for="email">
-							Email 
-							<span class="contact-form__reqiured-field">*</span>
-						</label>
-						<input type="email" id="sender_email" name="sender_email">
+					<div class="contact-form__sender-message">
+						<div class="contact-form__text-input">
+							<label for="message">What are you looking to achieve
+								<span class="contact-form__reqiured-field">*</span>
+							</label>
+							<textarea id="sender_message" name="sender_message"></textarea>
+						</div>
+						<button class="btn btn--black" type="submit">Submit</button>
 					</div>
 					
-					<div class="contact-form__text-input-group">
-						<label for="email">
-							Phone Number 
-						</label>
-						<input type='tel' pattern='[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{4}' 
-						title='Phone Number (Format: +9(999)999-9999)' id="phone" 
-						name="sender_phone">
-					</div>
-
 				</div>
 
-				<div class="contact-form__sender-message">
-					<div class="contact-form__text-input-group">
-						<label for="message">What are you looking to achieve
-							<span class="contact-form__reqiured-field">*</span>
-						</label>
-						<textarea id="sender_message" name="sender_message"></textarea>
-				</div>
+				<p class="contact-form__disclaimer">
+					Don't worry, we don't give out your info. Check out our
+					 <a href="#">Privacy Policy</a> for more details.
+				</p>
 
-				<button class="btn btn-white" type="submit">Submit</button>
 
 			</form>
 			

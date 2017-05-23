@@ -6,5 +6,11 @@
     	&--thick{
     		border: solid 3px black;
     	}
+    	&--thin{
+    		border: solid 1px black;
+    	}
+    	&--white{
+    		border-color: white; 
+    	}
 	}
 }
