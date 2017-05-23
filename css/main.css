@@ -729,4 +729,8 @@ body {
     .contact-form__disclaimer a:hover {
       color: #790000; }
 
+.site-footer__text {
+  text-align: center;
+  font-weight: bold; }
+
 /*# sourceMappingURL=main.css.map */
