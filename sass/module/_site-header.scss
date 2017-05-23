@@ -4,7 +4,8 @@
 	padding: 0;
 	display: block;
 	margin:0 auto;
-	height:60px;
+	transition: background-color .3s ease-out;  
+	min-height:60px;
 	
 	position: fixed;
 	top:0;
@@ -17,8 +18,63 @@
     box-shadow: rgba(0,0,0,0.08) 0 6px 10px; 
     border-bottom: 1px solid #e1e1e1;
 
+
+    &--is-expanded{
+		position: fixed;
+	    bottom: 0;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    background-color: rgba(255, 255, 255, 0.93);
+
+	    @include at-media-breakpoint(960px) {
+	    	position: fixed;
+		    bottom: auto;
+		    top: 0;
+		    left: auto;
+		    right: auto;
+	    	background-color: white;
+	    }
+
+	   	.site-header__main-menu{
+	    	display:block;
+	    }
+	}
+
     &__nav{
-    	display: flex; 
+    	@include at-media-breakpoint(960px) {
+    		display: flex;
+    	}
+    }
+    &__logo{
+    	display: block;
+    	text-align: left;
+
+    	img{
+
+    	}
+
+    	p{
+
+    	}
+    }
+
+    &__main-menu{
+    	display:none;
+    	@include at-media-breakpoint(960px) {
+    		display: block;
+    	}
+
+    	text-align: center;
+
+    	&__links{
+    		display: block;
+    		text-align: center;
+
+    		button{
+
+    		}
+    	}
     }
 
     &__menu-icon{
