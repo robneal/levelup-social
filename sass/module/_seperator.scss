@@ -1,0 +1,10 @@
+.seperator{
+	&__short{
+		width: 90px;
+    	margin: 15px auto 30px auto;
+    	
+    	&--thick{
+    		border: solid 3px black;
+    	}
+	}
+}

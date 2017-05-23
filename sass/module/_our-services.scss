@@ -1,0 +1,47 @@
+.our-services{
+	&__items-group{
+		display: flex;
+    	flex-wrap: wrap;
+    	justify-content: center;
+    	flex-direction: column;
+    	flex-basis: auto;
+
+    	@include at-media-breakpoint($lg-breakpoint) {
+    		flex-direction:row;
+    	}
+
+		&__item{
+			width: 100%;
+			max-width: 320px; 
+			border: solid 3px $levelup-brown; 
+		    margin: 30px auto;
+		    padding: 1.5rem;
+		    border-radius: 10px;
+		    position: relative;
+
+		    @include at-media-breakpoint($lg-breakpoint) {
+		    	max-width: 280px;
+		    }
+
+		    &__title{
+		    	text-align: center;
+    			text-transform: uppercase;
+    			margin: 15px auto 25px auto;
+		    }
+
+		    &__description{
+		    	text-align: left;
+    			font-size: .7em;
+   				margin: 10px auto;
+		    }
+
+		    .btn{
+		    	margin-top: 15px; 
+		    	position: relative;
+		    	bottom: 0; 
+
+		    }
+		}
+	}
+}
+
