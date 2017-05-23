@@ -19,10 +19,11 @@
 
 	<header class="site-header">
 		
-		<input type="checkbox" id="hbMenu"/>
-		<label class="hbMenuLabel" for="hbMenu"></label>
+		<div class="site-header__menu-icon">
+        	<div class="site-header__menu-icon__middle"></div>
+      	</div>
 
-		<nav class="wrapper">
+		<nav class="wrapper site-header__nav">
 			
 			<div class="site-header__logo">
 				<a href="index.html">
@@ -31,9 +32,9 @@
 				</a>
 			</div>
 
-			<ul class="site-header__menu">
-				<a class="site-header__menu-links" href="case-studies.html">Case Studies</a>
-				<a class="site-header__menu-links" href="#work-with-us">
+			<ul class="site-header__main-menu">
+				<a class="site-header__main-menu__links" href="case-studies.html">Case Studies</a>
+				<a class="site-header__main-menu__links" href="#work-with-us">
 					<button class="btn btn--blue">Work With Us</button>
 				</a>
 			</ul>
@@ -49,11 +50,11 @@
 				<h1 class="visual-lead__description">
 					We are a digital agency build for the now. We partner
 					with clients to drive bussiness outcomes with best-in-class
-					<a href="">modern content production</a>, <a href="">social media
-					management</a> <a href="">, web development</a> and everything else in between.  
+					<a href="#wwu-digital-advertising">modern content production</a>, <a href="#wwu-social-media">social media
+					management</a> <a href="#wwu-web-dev">, web development</a> and everything else in between.  
 				</h1>
 
-				<a href="" class="btn btn--white visual-lead__btn">Work With Us</a>
+				<a href="#work-with-us" class="btn btn--white visual-lead__btn">Work With Us</a>
 			</div>
 			<div class="visual-lead__down-arrow">
 				<a href="#our-services">▼</a>
@@ -70,7 +71,7 @@
 			
 			<div class="our-services__items-group">
 				<div class="our-services__items-group__item">
-					<h4 class="our-services__items-group__item__title">Social Media Management</h4>
+					<h4 id="wwu-social-media" class="our-services__items-group__item__title">Social Media Management</h4>
 					<img src="#"/>
 					<img src="#"/>
 					<img src="#"/>
@@ -92,11 +93,11 @@
 						relationships that grow your brand and business. 
 					</p>
 
-					<a href="#" class="btn btn--white">See case studies</a>
+					<a href="case-studies.html" class="btn btn--white">See case studies</a>
 				</div>
 
 				<div class="our-services__items-group__item">
-					<h4 class="our-services__items-group__item__title">Dittal Advertising</h4>
+					<h4 id="wwu-digital-advertising" class="our-services__items-group__item__title">Digital Advertising</h4>
 					<img src="#"/>
 					<img src="#"/>
 					<img src="#"/>
@@ -118,11 +119,11 @@
 						ads where their attention is. 
 					</p>
 
-					<a href="#" class="btn btn--white">See case studies</a>
+					<a href="case-studies.html" class="btn btn--white">See case studies</a>
 				</div>
 
 				<div class="our-services__items-group__item">
-					<h4 class="our-services__items-group__item__title">Web Development</h4>
+					<h4 id="wwu-web-dev" class="our-services__items-group__item__title">Web Development</h4>
 					<img src="#"/>
 					<img src="#"/>
 					<img src="#"/>
@@ -144,7 +145,7 @@
 						ads where their attention is. 
 					</p>
 
-					<a href="#" class="btn btn--white">See case studies</a>
+					<a href="case-studies.html" class="btn btn--white">See case studies</a>
 				</div>			
 			</div>
 
@@ -170,7 +171,7 @@
 				<img src="img" />
 			</div>
 
-			<a href="#" class="btn btn--blue">Client case studies</a>
+			<a href="case-studies.html" class="btn btn--blue">Client case studies</a>
 
 		</div>
 	</section>
@@ -266,16 +267,20 @@
 	<footer class="site-footer page-section page-section--brown">
 		<div class="wrapper">
 			<p class="site-footer__text"> Levelup Social Media &copy; 2017 | 
-			<img class="site-footer__github-logo" src="img/" /></p>
+				<a href="https://github.com/robneal/levelup-social">
+					<img class="site-footer__github-logo" src="img/" />
+				</a>
+			</p>
 		</div>
 	</footer>
 
 	
 	
-	<!-- jQuery Google CDN  
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+	<!--  jQuery Google CDN  --> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-	<!-- My Javascript
-	<script type="text/javascript" src=" "></script>-->
+	<!-- My Javascript -->
+	<script type="text/javascript" src="js/modules/smoothScrolling.js"></script>
+	<script type="text/javascript" src="js/modules/MobileMenu.js"></script>
 </body>
 </html>

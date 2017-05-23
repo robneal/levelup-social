@@ -12,14 +12,86 @@
 	min-width: 318px; 
 	z-index: 10;  
 	
-	//-webkit-margin-before-collapse: separate;
-	//-webkit-box-shadow: rgba(0,0,0,0.15) 0 6px 10px;
-    //box-shadow: rgba(0,0,0,0.08) 0 6px 10px; 
+	-webkit-margin-before-collapse: separate;
+	-webkit-box-shadow: rgba(0,0,0,0.15) 0 6px 10px;
+    box-shadow: rgba(0,0,0,0.08) 0 6px 10px; 
     border-bottom: 1px solid #e1e1e1;
 
-    nav{
-    	display:none;
+    &__nav{
+    	display: flex; 
     }
+
+    &__menu-icon{
+    	display: block;
+		width:30px;
+		height: 19px;
+		/*background-color: #FFF;*/
+		position: absolute;
+		z-index: 10; 
+		top: 20px;
+		right: 25px;
+
+		@include at-media-breakpoint($lg-breakpoint) {
+    		display: none;
+    	} 
+
+		&::before {
+			content : "";
+			position:absolute;
+			top:0;
+			left:0;
+			width:30px;
+			height: 3px;
+			background-color: black;
+			transform-origin: 10% 0; 
+			transition: transform .3s ease-out;
+		}
+
+		&__middle{
+			position:absolute;
+			top:8px;
+			left:0;
+			width:30px;
+			height: 3px;
+			background-color: black;
+			transition: all .3s ease-out;
+			transform-origin: 0 50%; 
+		}
+
+		&::after{
+			content: ""; 
+			position:absolute;
+			bottom:0;
+			left:0;
+			width:30px;
+			height: 3px;
+			background-color: black;
+			transform-origin: 0 100%; 
+			transition: transform .3s ease-out;
+		}
+
+		// Need to fix thais 
+		// @mixin atMedium{
+		// 	display: none; 
+		// }
+
+		&--close-x{
+			&::before{
+				//transform: rotate(45deg) scaleX(1.25);
+				transform: rotate(42deg) scaleX(1);
+			}	
+
+			.site-header__menu-icon__middle{
+				opacity: 0;
+				transform: scaleX(0);
+			}
+
+			&::after{
+				//transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+				transform: rotate(-42deg) scaleX(1) translateY(2px);
+			}
+		}
+	}
 
 }
 
