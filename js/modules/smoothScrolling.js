@@ -1,4 +1,7 @@
 jQuery(document).ready(function($){
+	console.log("js is twerking");
+	//console.log("The whole world hates ie, Stop using it! -__-"); 
+
 	// Smooth Scroolling on all local anchor links 
 	$(function() {
 	  $('a[href*="#"]:not([href="#"])').click(function() {

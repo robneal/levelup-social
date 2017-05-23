@@ -16,3 +16,11 @@ body {
 	overflow-x: hidden;
 	-webkit-font-smoothing: antialiased;
 }
+
+a{
+	color:$warning-red;
+	text-decoration: none;
+	&:hover{
+		color:black; 
+	}
+}

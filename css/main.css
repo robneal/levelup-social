@@ -447,6 +447,44 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased; }
 
+a {
+  color: #790000;
+  text-decoration: none; }
+  a:hover {
+    color: black; }
+
+@keyframes bouncing {
+  0% {
+    bottom: 0; }
+  50% {
+    bottom: 20px; }
+  100% {
+    bottom: 0; } }
+/* Firefox < 16 */
+@-moz-keyframes bouncing {
+  0% {
+    bottom: 0; }
+  50% {
+    bottom: 20px; }
+  100% {
+    bottom: 0; } }
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes bouncing {
+  0% {
+    bottom: 0; }
+  50% {
+    bottom: 20px; }
+  100% {
+    bottom: 0; } }
+/* Internet Explorer  -- the whole world hates ie -__- */
+/* Opera < 12.1 */
+@-o-keyframes bouncing {
+  0% {
+    bottom: 0; }
+  50% {
+    bottom: 20px; }
+  100% {
+    bottom: 0; } }
 .page-section {
   padding: 90px 0px;
   background-color: white; }
@@ -551,6 +589,7 @@ body {
       min-height: 400px; } }
   .visual-lead__content-container {
     padding: 15px;
+    padding-bottom: 30px;
     position: relative;
     display: block;
     margin: 0 auto;
@@ -581,7 +620,11 @@ body {
         padding-bottom: 35px; } }
     .visual-lead__down-arrow a {
       text-decoration: none;
-      color: white; }
+      color: white;
+      animation: bouncing 1.25s infinite ease-in-out;
+      font-size: 30px;
+      position: absolute;
+      left: calc(50% - 15px); }
 
 .btn {
   background-color: #579BCE;

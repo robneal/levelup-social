@@ -27,6 +27,7 @@
 	
 	&__content-container{
 		padding: 15px;
+		padding-bottom: 30px; 
 	    position: relative;
 	    display: block;
 	    margin: 0 auto;
@@ -58,6 +59,9 @@
     	padding-bottom: 15px;
     	padding-top: 25px;
 	    text-align: center;
+
+
+
 	    @include at-media-breakpoint($md-breakpoint) {
 
 	    	padding-top:35px;
@@ -67,6 +71,11 @@
 	    a{
 	    	text-decoration: none;
     		color: white;
+
+    		animation: bouncing 1.25s infinite ease-in-out;
+    		font-size: 30px;
+    		position: absolute;
+    		left: calc(50% - 15px);
 	    }
 	}
 
