@@ -41,13 +41,25 @@
     	line-height: 22pt;
     	text-align: center;
 
+    	a{
+    		color: $levelup-brown;
+    		text-decoration: underline;
+    		&:hover{
+    			color:$warning-red; 
+    		}
+    	}
+
     	@include at-media-breakpoint(500px) {
-    	    font-size: 26.4pt;
+    	    font-size: 25.4pt;
 		    line-height: 36.3pt;
 		    width: 85%;
 		    margin: 0 auto;
 		    padding-top: 13%;
 		    padding-bottom: 7.5%;
+		}
+
+		&--under-construction{
+			color:$warning-yellow;
 		}
 	}
 

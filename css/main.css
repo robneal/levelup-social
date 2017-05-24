@@ -555,7 +555,6 @@ a {
     display: flex;
     justify-content: left;
     align-items: center;
-    padding: 10px 0;
     padding: 10px 0 18px 0;
     margin: 10px 0 0 0;
     text-align: left;
@@ -684,14 +683,21 @@ a {
     font-size: 16pt;
     line-height: 22pt;
     text-align: center; }
+    .visual-lead__description a {
+      color: #3D3B3B;
+      text-decoration: underline; }
+      .visual-lead__description a:hover {
+        color: #790000; }
     @media (min-width: 500px) {
       .visual-lead__description {
-        font-size: 26.4pt;
+        font-size: 25.4pt;
         line-height: 36.3pt;
         width: 85%;
         margin: 0 auto;
         padding-top: 13%;
         padding-bottom: 7.5%; } }
+    .visual-lead__description--under-construction {
+      color: #fff554; }
   .visual-lead__btn {
     max-width: 450px; }
   .visual-lead__down-arrow {
@@ -745,6 +751,10 @@ a {
   text-align: center;
   font-size: 2.8em;
   margin: .5em auto; }
+  .section-title__image--heart {
+    width: 44px;
+    height: 44px;
+    vertical-align: middle; }
 
 .section-subtitle {
   text-transform: uppercase;
