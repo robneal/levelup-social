@@ -527,6 +527,12 @@ a {
     left: 0;
     right: 0;
     background-color: rgba(255, 255, 255, 0.93); }
+    .site-header--is-expanded .site-header__main-menu {
+      display: block; }
+      .site-header--is-expanded .site-header__main-menu__links {
+        margin: 20px auto; }
+        .site-header--is-expanded .site-header__main-menu__links__btn {
+          margin-left: 0; }
     @media (min-width: 960px) {
       .site-header--is-expanded {
         position: fixed;
@@ -534,24 +540,66 @@ a {
         top: 0;
         left: auto;
         right: auto;
-        background-color: white; } }
-    .site-header--is-expanded .site-header__main-menu {
-      display: block; }
+        background-color: white; }
+        .site-header--is-expanded .site-header__main-menu {
+          display: flex; }
+          .site-header--is-expanded .site-header__main-menu__links {
+            margin: 0; }
+            .site-header--is-expanded .site-header__main-menu__links__btn {
+              margin-left: 30px; } }
   @media (min-width: 960px) {
     .site-header__nav {
-      display: flex; } }
+      display: flex;
+      justify-content: space-between; } }
   .site-header__logo {
-    display: block;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px 0;
+    padding: 10px 0 18px 0;
+    margin: 10px 0 0 0;
     text-align: left; }
+    .site-header__logo p {
+      text-transform: uppercase;
+      font-weight: bold;
+      padding-left: 5px;
+      color: #3d3b3b; }
+      .site-header__logo p span {
+        color: #579bce;
+        font-weight: 500;
+        font-style: italic; }
   .site-header__main-menu {
     display: none;
     text-align: center; }
     @media (min-width: 960px) {
       .site-header__main-menu {
-        display: block; } }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left; } }
     .site-header__main-menu__links {
       display: block;
-      text-align: center; }
+      padding-top: 4px;
+      min-height: 0px;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #3d3b3b;
+      vertical-align: baseline;
+      -ms-touch-action: manipulation;
+      touch-action: manipulation;
+      cursor: pointer;
+      color: #3d3b3b;
+      -webkit-transition: color 100ms ease-in, border-color 100ms ease-in;
+      transition: color 100ms ease-in, border-color 100ms ease-in; }
+      .site-header__main-menu__links__btn {
+        display: inline-block;
+        font-weight: 700;
+        border: 2px solid #3d3b3b;
+        padding: 3px 25px 3px;
+        color: #3d3b3b;
+        border-radius: 30px;
+        margin-left: 30px; }
   .site-header__menu-icon {
     display: block;
     width: 30px;
