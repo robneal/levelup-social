@@ -17,6 +17,9 @@
    	overflow: hidden;
 	margin: 59px auto 0 auto;
 
+	&--construction{
+		background-color: black;
+	}
 	@include at-media-breakpoint(380px) {
 		min-height: 460px;
 	}
