@@ -1,0 +1,17 @@
+
+<svg width="266px" height="266px" viewBox="0 0 266 266" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M153.947368,122.615385 L153.947368,191.076923 L96.9298246,191.076923 L96.9298246,122.615385 L75,122.615385 L125,58 L175,122.615385 L153.947368,122.615385 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(8.000000, 8.000000)">
+            <g id="Combined-Shape">
+                <use fill="#000000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <path stroke="#000000" stroke-width="1" d="M153.447368,190.576923 L97.4298246,190.576923 L97.4298246,122.615385 L97.4298246,122.115385 L96.9298246,122.115385 L76.0191194,122.115385 L125,58.8170158 L173.980881,122.115385 L153.947368,122.115385 L153.447368,122.115385 L153.447368,122.615385 L153.447368,190.576923 Z"></path>
+            </g>
+            <path d="M125,250 C55.9644063,250 0,194.035594 0,125 C0,55.9644063 55.9644063,0 125,0 C194.035594,0 250,55.9644063 250,125 C250,194.035594 194.035594,250 125,250 Z M125,242 C189.617316,242 242,189.617316 242,125 C242,60.3826843 189.617316,8 125,8 C60.3826843,8 8,60.3826843 8,125 C8,189.617316 60.3826843,242 125,242 Z" id="Combined-Shape" stroke="#000000" stroke-width="15" fill="#000000"></path>
+        </g>
+    </g>
+</svg>

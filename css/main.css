@@ -558,7 +558,12 @@ a {
     padding: 10px 0;
     padding: 10px 0 18px 0;
     margin: 10px 0 0 0;
-    text-align: left; }
+    text-align: left;
+    max-width: 210px; }
+    .site-header__logo img {
+      width: 25px;
+      height: 23px;
+      vertical-align: middle; }
     .site-header__logo p {
       text-transform: uppercase;
       font-weight: bold;
@@ -905,5 +910,23 @@ a {
 .site-footer__text {
   text-align: center;
   font-weight: bold; }
+.site-footer__github-logo {
+  width: 17px;
+  vertical-align: text-bottom;
+  height: 17px;
+  margin-left: 3px;
+  min-width: 15px;
+  vertical-align: text-bottom;
+  min-height: 15px;
+  margin-left: 3px;
+  display: inline-block;
+  /* border: solid 1px white; */
+  width: 17px;
+  height: 17px;
+  background-image: url("../img/icons/github-logo--white.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .site-footer__github-logo:hover {
+    background-image: url("../img/icons/github-logo--black.png"); }
 
 /*# sourceMappingURL=main.css.map */

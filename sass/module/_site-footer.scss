@@ -4,4 +4,28 @@
 		text-align: center;
     	font-weight: bold;
 	}
+
+	&__github-logo{
+		width: 17px;
+	    vertical-align: text-bottom;
+	    height: 17px;
+	    margin-left: 3px;
+
+
+		min-width: 15px;
+	    vertical-align: text-bottom;
+	    min-height: 15px;
+	    margin-left: 3px;
+	    display: inline-block;
+	    /* border: solid 1px white; */
+	    width: 17px;
+	    height: 17px;
+	    background-image: url('../img/icons/github-logo--white.png');
+	    background-repeat: no-repeat;
+	    background-size: cover;
+
+	    &:hover{
+	    	background-image: url('../img/icons/github-logo--black.png');
+	    }
+	}
 }
