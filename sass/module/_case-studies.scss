@@ -1,0 +1,40 @@
+.case-studies{
+	&__group{
+		margin-top: 40px; 
+		display: flex;
+		justify-content:space-between; 
+		flex-wrap:wrap;
+	}
+
+	&__item{
+		width:100%;
+		@include at-media-breakpoint($md-breakpoint) {
+			width:49%;
+		}
+
+
+		&__description-group{
+			padding: 0 15px;
+		    margin-top: 15px;
+		    margin-bottom: 15px;
+		    border-left: 2px solid #e1e1e1;
+		}
+
+		&__name{
+			text-transform: uppercase;
+			color: $levelup-blue; 
+			font-size:20px; 
+		}
+
+		&__title{
+			margin: 5px auto; 
+			font-size: 28px;
+			color:$levelup-brown;  
+		}
+
+		&__brief{
+			font-size: 0.9em;
+			color:$levelup-brown;
+		}
+	}
+}

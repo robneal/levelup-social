@@ -502,6 +502,9 @@ a {
   @media (min-width: 960px) {
     .wrapper {
       padding: 0px 2.5rem; } }
+  .wrapper--thin {
+    padding: 0px .5rem;
+    max-width: 1200px; }
 
 .site-header {
   background-color: white;
@@ -758,12 +761,18 @@ a {
     width: 44px;
     height: 44px;
     vertical-align: middle; }
+  .section-title--blue {
+    color: #579BCE; }
 
 .section-subtitle {
   text-transform: uppercase;
   text-align: center;
   font-weight: 400;
   margin: .5em auto; }
+  .section-subtitle--lowercase {
+    text-transform: none; }
+  .section-subtitle--thin {
+    max-width: 720px; }
 
 .our-services__items-group {
   display: flex;
@@ -829,6 +838,33 @@ a {
         margin: 20px 10px 10px 10px; } }
 .testimonials .btn {
   max-width: 450px; }
+
+.case-studies__group {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+.case-studies__item {
+  width: 100%; }
+  @media (min-width: 760px) {
+    .case-studies__item {
+      width: 49%; } }
+  .case-studies__item__description-group {
+    padding: 0 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-left: 2px solid #e1e1e1; }
+  .case-studies__item__name {
+    text-transform: uppercase;
+    color: #579BCE;
+    font-size: 20px; }
+  .case-studies__item__title {
+    margin: 5px auto;
+    font-size: 28px;
+    color: #3D3B3B; }
+  .case-studies__item__brief {
+    font-size: 0.9em;
+    color: #3D3B3B; }
 
 .contact-form__title {
   display: inline-block;
