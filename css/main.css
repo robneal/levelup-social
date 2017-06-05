@@ -812,7 +812,7 @@ a {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 30px auto; }
+  margin: 30px auto 30px auto; }
   .testimonials__brand-logos img {
     width: 250px;
     height: 200px;
