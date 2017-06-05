@@ -2,8 +2,28 @@
 	&__brand-logos{
 		display: flex; 
 		justify-content: center; 
+		flex-direction: column; 
 		margin: 30px auto;
-	}
+
+		& img{
+			width: 250px;
+		    height: 200px;
+		    display: block;
+		    margin: 20px auto 10px auto;
+		}
+
+		@include at-media-breakpoint(600px) {
+			flex-direction:row;
+			flex-wrap: wrap;
+
+			& img{
+				width: 200px;
+			    height: 150px;
+			    display: block;
+			    margin: 20px 10px 10px 10px;
+			}
+		}
+	}	
 
 	.btn{
 		max-width: 450px; 

@@ -810,7 +810,22 @@ a {
 .testimonials__brand-logos {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   margin: 30px auto; }
+  .testimonials__brand-logos img {
+    width: 250px;
+    height: 200px;
+    display: block;
+    margin: 20px auto 10px auto; }
+  @media (min-width: 600px) {
+    .testimonials__brand-logos {
+      flex-direction: row;
+      flex-wrap: wrap; }
+      .testimonials__brand-logos img {
+        width: 200px;
+        height: 150px;
+        display: block;
+        margin: 20px 10px 10px 10px; } }
 .testimonials .btn {
   max-width: 450px; }
 
