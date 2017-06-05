@@ -665,7 +665,8 @@ a {
   overflow: hidden;
   margin: 59px auto 0 auto; }
   .visual-lead--construction {
-    background-color: black; }
+    background-color: black;
+    background-image: none; }
   @media (min-width: 380px) {
     .visual-lead {
       min-height: 460px; } }

@@ -1,7 +1,10 @@
 .visual-lead{
 	background-color: $levelup-blue;
-	//background: url(../img/grouppic.jpg) no-repeat 50% center fixed;
-	//background: url(../img/grouppic.jpg) no-repeat center center fixed; 
+	//background: url(../img/sample-hero.) no-repeat 50% center fixed;
+	//background: url(../img/levelup-team.jpg) no-repeat center center fixed; 
+
+	//background: url(../img/sample-hero.gif) no-repeat 50% center; 
+	//background: url(../img/levelup-team.jpg) no-repeat 50% center; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -19,6 +22,7 @@
 
 	&--construction{
 		background-color: black;
+		background-image: none;
 	}
 	@include at-media-breakpoint(380px) {
 		min-height: 460px;
