@@ -20,6 +20,27 @@
 		    border-left: 2px solid #e1e1e1;
 		}
 
+		&__image{
+			display: block;
+			text-decoration: none;
+			cursor: pointer;
+		    white-space: nowrap;
+		    -webkit-transition: color 100ms ease-in, border-color 100ms ease-in;
+		    transition: color 100ms ease-in, border-color 100ms ease-in;
+		    touch-action: manipulation;
+		    -ms-touch-action: manipulation;
+
+		    & img{
+		    	min-height: 160px;
+		    	width: 100%;
+
+		    	@include at-media-breakpoint($md-breakpoint) {
+		    		width:100%; 
+		    		height: 300px; 
+		    	}
+		    }
+		}
+
 		&__name{
 			text-transform: uppercase;
 			color: $levelup-blue; 
